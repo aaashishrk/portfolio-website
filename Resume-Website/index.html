@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aashish Ashwin R | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+    animation:navDown 1s ease;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:700;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:20px 8%;
+}
+
+/* IMAGE CARD */
+
+.hero-image{
+    animation:slideLeft 1.2s ease;
+}
+
+.hero-image img{
+    width:350px;
+    height:500px;
+    object-fit:cover;
+    border-radius:25px;
+    border:3px solid rgba(255,255,255,0.1);
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+    animation:
+    floating 4s ease-in-out infinite;
+}
+
+/* CONTENT CARD */
+
+.hero-content{
+    max-width:600px;
+    animation:slideRight 1.2s ease;
+}
+
+.hero-content h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    animation:fadeUp 1.8s ease;
+}
+
+.btn{
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ANIMATIONS */
+
+@keyframes navDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform:translateX(-150px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity:0;
+        transform:translateX(150px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes floating{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#cbd5e1;
+}
+.role{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg,#38bdf8,#60a5fa,#a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 0;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+    <div class="logo">Aashish</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="internships.html">Internships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-image">
+        <img src="profile.jpg" alt="Aashish Ashwin R">
+    </div>
+
+    <div class="hero-content">
+
+        <h3>Welcome To My Portfolio</h3>
+
+        <h1>
+            Aashish<br>
+            Ashwin R
+        </h1>
+
+        <p>
+            <h3 class="role">
+    COMPUTER SCIENCE STUDENT
+</h3><br>
+            Python Developer • Web Developer • Embedded Systems Enthusiast
+        </p>
+
+        <div class="buttons">
+
+            <a href="projects.html" class="btn primary">
+                View Projects
+            </a>
+
+            <a href="contact.html" class="btn secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Aashish Ashwin R | Portfolio
+</footer>
+
+</body>
+</html>

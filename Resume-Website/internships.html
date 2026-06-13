@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internships | Aashish Ashwin R</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+    min-height:100vh;
+    color:white;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+    padding:100px 10%;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* INTERNSHIPS */
+
+.container{
+    max-width:1200px;
+    margin:-40px auto 50px;
+    padding:20px;
+}
+
+.internship-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.internship-card{
+    background:rgba(30,41,59,0.8);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.internship-card:hover{
+    transform:translateY(-8px);
+}
+
+.internship-card h2{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.internship-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.internship-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.internship-btn:hover{
+    background:#1d4ed8;
+}
+
+/* HOME BUTTON */
+
+.home-section{
+    text-align:center;
+    margin-top:40px;
+}
+
+.home-btn{
+    display:inline-block;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:white;
+    text-decoration:none;
+    padding:14px 32px;
+    border-radius:12px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(37,99,235,0.3);
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(37,99,235,0.5);
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+    <h1>My Internships</h1>
+
+    <p>
+        Professional training experiences that helped me develop technical and practical skills.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <div class="internship-grid">
+
+        <div class="internship-card">
+
+            <h2>Python Programming Intern</h2>
+
+            <p>
+                Developed Python programs, automation scripts, and strengthened
+                problem-solving skills through practical projects.
+            </p>
+
+            <a href="python-internship.html" class="internship-btn">
+                View Details →
+            </a>
+
+        </div>
+
+        <div class="internship-card">
+
+            <h2>Web Development Intern</h2>
+
+            <p>
+                Designed responsive websites using HTML, CSS, and JavaScript
+                while learning deployment and optimization concepts.
+            </p>
+
+            <a href="webdev-internship.html" class="internship-btn">
+                View Details →
+            </a>
+
+        </div>
+
+        <div class="internship-card">
+
+            <h2>PCB Printing Intern</h2>
+
+            <p>
+                Learned PCB design, fabrication, circuit assembly,
+                and gained hands-on electronics experience and electronic hardware development.
+            </p>
+
+            <a href="pcb-internship.html" class="internship-btn">
+                View Details →
+            </a>
+
+        </div>
+
+        <div class="internship-card">
+
+            <h2>Embedded Systems Intern</h2>
+
+            <p>
+                Worked with microcontrollers, sensor interfacing,
+                and hardware-software integration projects.
+            </p>
+
+            <a href="embedded-internship.html" class="internship-btn">
+                View Details →
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="home-section">
+
+        <a href="index.html" class="home-btn">
+            🏠 Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

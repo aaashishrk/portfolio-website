@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Aashish Ashwin R</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    min-height:100vh;
+    color:white;
+}
+
+.hero{
+    background:linear-gradient(135deg,#141e30,#243b55);
+    padding:100px 10%;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.container{
+    max-width:1200px;
+    margin:-40px auto 50px;
+    padding:20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:rgba(30,41,59,0.8);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h2{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.project-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.project-btn:hover{
+    background:#1d4ed8;
+}
+
+.home-section{
+    text-align:center;
+    margin-top:40px;
+}
+
+.home-btn{
+    display:inline-block;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:white;
+    text-decoration:none;
+    padding:14px 32px;
+    border-radius:12px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(37,99,235,0.3);
+}
+
+.home-btn:hover{
+    transform:translateY(-3px);
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+    <h1>My Projects</h1>
+
+    <p>
+        Explore the projects I have developed using various technologies and concepts.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <div class="project-grid">
+
+        <!-- Animal Detection -->
+
+        <div class="project-card">
+
+            <h2>Animal Detection in Railways Using Python</h2>
+
+            <p>
+                Railway safety system that detects animals near railway tracks
+                using Python, OpenCV, and Machine Learning.
+            </p>
+
+            <a href="animal-detection.html" class="project-btn">
+                View Details →
+            </a>
+
+        </div>
+
+        <!-- AI Chatbot -->
+
+        <div class="project-card">
+
+            <h2>AI Chatbot</h2>
+
+            <p>
+                Intelligent chatbot developed using Artificial Intelligence
+                and Natural Language Processing techniques.The website provides a professional
+            online presence.
+            </p>
+
+            <a href="ai-chatbot.html" class="project-btn">
+                View Details →
+            </a>
+
+        </div>
+
+        <!-- Portfolio Website -->
+
+        <div class="project-card">
+
+            <h2>Personal Portfolio Website</h2>
+
+            <p>
+                Responsive portfolio website built using HTML, CSS and JavaScript
+                to showcase projects and skills. showcases my technical skills.
+            </p>
+
+            <a href="portfolio-project.html" class="project-btn">
+                View Details →
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="home-section">
+
+        <a href="index.html" class="home-btn">
+            🏠 Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
