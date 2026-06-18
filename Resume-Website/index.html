@@ -63,12 +63,13 @@ nav{
 /* HERO */
 
 .hero{
-    min-height:85vh;
+    min-height:auto;
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:80px;
-    padding:20px 8%;
+    gap:60px;
+    padding:40px 8% 20px;
+}
 }
 
 /* IMAGE CARD */
@@ -83,8 +84,9 @@ nav{
     object-fit:cover;
     border-radius:25px;
     border:3px solid rgba(255,255,255,0.1);
-    box-shadow:0 20px 40px rgba(0,0,0,0.4);
-
+   box-shadow:
+0 0 25px rgba(59,130,246,.4),
+0 0 60px rgba(59,130,246,.2);
     animation:
     floating 4s ease-in-out infinite;
 }
@@ -218,6 +220,65 @@ footer{
     -webkit-text-fill-color: transparent;
     margin: 15px 0;
 }
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:40px 8%;
+}
+
+.stat-card{
+    width:220px;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card h2{
+    color:#60a5fa;
+    font-size:40px;
+}
+
+.stat-card span{
+    color:#cbd5e1;
+}
+.buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    padding:12px 22px;
+    font-size:15px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
+.resume-btn{
+    background: linear-gradient(135deg,#2563eb,#3b82f6,#60a5fa);
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:14px;
+    font-weight:600;
+    letter-spacing:.5px;
+    box-shadow:0 0 20px rgba(59,130,246,.4);
+    transition:.4s;
+}
+
+.resume-btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 0 30px rgba(96,165,250,.8);
+}
 
 </style>
 </head>
@@ -266,12 +327,36 @@ footer{
                 View Projects
             </a>
 
-            <a href="contact.html" class="btn secondary">
-                Contact Me
-            </a>
+            <a href="Aashish_Ashwin_Resume.pdf" download class="btn secondary">
+    Download Resume
+</a>
+</a>
 
         </div>
 
+    </div>
+
+</section>
+<section class="stats">
+
+    <div class="stat-card">
+        <h2>4+</h2>
+        <span>Internships</span>
+    </div>
+
+    <div class="stat-card">
+        <h2>3</h2>
+        <span>Project</span>
+    </div>
+
+    <div class="stat-card">
+        <h2>93%</h2>
+        <span>Diploma</span>
+    </div>
+
+    <div class="stat-card">
+        <h2>2028</h2>
+        <span>Graduate</span>
     </div>
 
 </section>
@@ -279,6 +364,34 @@ footer{
 <footer>
     © 2026 Aashish Ashwin R | Portfolio
 </footer>
+<script>
+
+const roles = [
+"Python Developer",
+"Web Developer",
+"Software Engineer"
+];
+
+let index = 0;
+
+function changeRole(){
+
+document.getElementById("typing").innerHTML =
+roles[index];
+
+index++;
+
+if(index >= roles.length){
+index = 0;
+}
+
+}
+
+changeRole();
+
+setInterval(changeRole,2000);
+
+</script>
 
 </body>
 </html>
